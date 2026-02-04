@@ -4,13 +4,17 @@ let functionBtn = document.querySelectorAll('.function-list li');
 
 functionBtn.forEach((item,index) => {
     item.addEventListener('mouseenter', function() {
-        dpCreation.style.display = 'none';
-        dpBusiness.style.display = 'none';
+        dpCreation.style.visibility = 'hidden';
+        dpCreation.style.opacity = 0;
 
+        dpBusiness.style.visibility = 'hidden';
+        dpBusiness.style.opacity = 0;
         if (index === 0) {
-            dpCreation.style.display = 'block';
+            dpCreation.style.visibility = 'visible';
+            dpCreation.style.opacity = 1;
         } else if (index === 1) {
-            dpBusiness.style.display = 'block';
+            dpBusiness.style.visibility = 'visible';
+            dpBusiness.style.opacity = 1;
         }
 
     });
@@ -19,17 +23,20 @@ functionBtn.forEach((item,index) => {
         let dpContainer = document.querySelector('.dropdown-container');
 
         if (!dpContainer.contains(e.relatedTarget)) {
-            dpCreation.style.display = 'none';
-            dpBusiness.style.display = 'none';
+            dpCreation.style.visibility = 'hidden';
+            dpCreation.style.opacity = 0;
+            dpBusiness.style.visibility = 'hidden';
+            dpBusiness.style.opacity = 0;
         }
-        
+
     });
 });
 
 let dpList = document.querySelectorAll('.dplist');
 dpList.forEach((item) => {
     item.addEventListener('mouseleave', function() {
-        item.style.display = 'none';
+        item.style.visibility = 'hidden';
+        item.style.opacity = 0;
     });
 });
 
