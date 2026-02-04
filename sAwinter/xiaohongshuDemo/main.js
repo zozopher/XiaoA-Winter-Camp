@@ -14,6 +14,16 @@ functionBtn.forEach((item,index) => {
         }
 
     });
+
+    item.addEventListener('mouseleave', function(e) {
+        let dpContainer = document.querySelector('.dropdown-container');
+
+        if (!dpContainer.contains(e.relatedTarget)) {
+            dpCreation.style.display = 'none';
+            dpBusiness.style.display = 'none';
+        }
+        
+    });
 });
 
 let dpList = document.querySelectorAll('.dplist');
