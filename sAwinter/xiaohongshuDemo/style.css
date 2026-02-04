@@ -37,7 +37,7 @@ input {
     display: flex;
     align-items: center;
     padding: 0 10px;
-    margin-left: 120px;
+    margin-left: 160px;
 }
 
 .search-input {
@@ -188,7 +188,6 @@ input {
 
 .titles-list {
     display: flex;
-    gap: 5px;
     margin-bottom: 20px;
     color: #626262;
 }
