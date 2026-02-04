@@ -20,7 +20,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 45px 3px 30px;
+    padding: 0 30px 3px 30px;
     background-color: #ffffff;
     position: fixed;
     top: 0;
@@ -54,13 +54,91 @@ input {
 
 .function-list {
     display: flex;
-    gap: 30px;
+    gap: 5px;
 }
 
 .function-text {
+    width: 100px;
+    height: 40px;
     font-size: 17px;
     color: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
     cursor: pointer;
+}
+
+.function-text:hover {
+    background-color: #f5f5f5;
+    color: #2d2d2d;
+}
+
+.creation{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    top: 70px;
+    right: 90px;
+    width: 200px;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: #cbccce50 0px 0px 12px 4px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.creation::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 100px;
+    height: 50px;
+    z-index: 201;
+}
+
+.business{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    top: 70px;
+    right: 10px;
+    width: 180px;
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: #cbccce50 0px 0px 12px 4px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.business::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 100px;
+    height: 50px;
+    z-index: 201;
+}
+
+.dplist:hover{
+    display: block;
+}
+
+.dp-item{
+    color: #626262;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dp-item:hover{
+    background-color: #f5f5f5;
+    color: #2d2d2d;
 }
 
 #side-column{
