@@ -33,6 +33,7 @@ button {
     background-color: transparent;
 }
 .header-inner {
+    background: transparent;
     height: 50px;
     margin: 0 auto;
     padding: 10px 15px;
@@ -40,9 +41,6 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-}
-.brand-text {
-
 }
 .main-nav {
     display: inline-flex;
@@ -192,7 +190,8 @@ button {
     background: #fff;
     border: 1px solid #fff;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 13px;
@@ -222,6 +221,20 @@ button {
     border-radius: 10px;
     padding: 12px 18px 18px;
 }
+
+.category-card.one {
+    background: #ff8bf41f;
+}
+.category-card.two {
+    background: #6ce2a91f;
+}
+.category-card.three {
+    background: #72b8ff1f;
+}
+.category-card.four {
+    background: #ff7a7a1f;
+}
+
 .cate-title {
     font-size: 1.25rem;
     font-weight: 800;
